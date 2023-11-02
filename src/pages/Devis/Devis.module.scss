@@ -1,0 +1,101 @@
+@use "../../assets/styles/mixin" as mixin;
+
+header {
+    height: 450px;
+    background-image: url(../../assets/images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    .header {
+        padding: 2rem 2rem 0 0;
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        align-items: center;
+
+        .logo {
+            width: 8rem;
+            height: 8rem;
+            opacity: 0.7;
+        }
+
+            .buttonHeaderLeft {
+                font-size: 18px;
+                border-radius: 20px;
+                padding: 8px;
+                border: none;
+                cursor: pointer;
+                a {
+                    color: var(--firstColor);
+                }
+            }
+    }
+}
+
+.logoMain {
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem auto;
+}
+
+.feedback {
+  color: red;
+  font-size: 18px;
+  font-weight: 600;
+
+  @include mixin.xs {
+    font-size: 10px;
+  }
+}
+
+.feedbackGood {
+  color: green;
+  font-size: 18px;
+  font-weight: 600;
+
+  @include mixin.xs {
+    font-size: 10px;
+  }
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  input {
+    font-size: 18px;
+    height: 2rem;
+    padding: 10px;
+  }
+
+  .inputAdress {
+    width: 100%;
+  }
+
+  .inputTel {
+    width: 20.3%;
+  }
+
+  .twoInput {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .termsProject {
+    font-size: 12px;
+    width: 35%;
+  }
+
+  .sizeArea {
+    height: 400px;
+    width: 1000px;
+    font-size: 18px;
+  }
+
+  .buttonDevis {
+    width: 6%;
+    padding: 5px;
+  }
+}

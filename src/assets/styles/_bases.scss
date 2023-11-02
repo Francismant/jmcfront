@@ -1,0 +1,26 @@
+
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a,
+i,
+img {
+    display: block;
+}
+
+.center {
+    width: 80%;
+    margin: 0 auto;
+}
